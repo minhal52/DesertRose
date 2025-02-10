@@ -644,22 +644,24 @@ margin-top: 0;
     }
     
 }
-/* Responsive Design */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
         text-align: center;
+        align-items: center; /* Ensures all content is centered */
     }
 
-    .footer-about {
+    .footer-about, 
+    .footer-contact {
         text-align: center;
+        width: 100%; /* Ensures it takes full width for centering */
     }
 
     .footer-contact {
-        text-align: center;
-        margin-top: 20px; /* Adds some spacing between sections */
+        margin-top: 20px; /* Adds spacing between sections */
     }
 }
+
 .footer-designed {
     text-align: center;
     margin-top: 20px;
