@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <title> Desert Rose </title>
     <!-- <title>Desert Rose</title> -->
@@ -817,6 +819,36 @@ margin-top: 0;
             let whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
             window.open(whatsappURL, "_blank");
         }
+    document.addEventListener("DOMContentLoaded", function () {
+        ScrollReveal().reveal('.subtitle, .subtitle1, .subtitle2', {
+            duration: 1500,
+            origin: 'bottom',
+            distance: '30px',
+            delay: 300,
+            easing: 'ease-in-out',
+            reset: false
+        });
+
+        ScrollReveal().reveal('.hero-content', {
+            duration: 1800,
+            origin: 'bottom',
+            distance: '40px',
+            delay: 500,
+            easing: 'ease-in-out',
+            reset: false
+        });
+
+        ScrollReveal().reveal('.social-icons button', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '50px',
+            delay: 700,
+            easing: 'ease-in-out',
+            reset: false
+        });
+    });
+
+
     </script>
 
 
