@@ -565,6 +565,57 @@ margin-top: 0;
             }
         }
 
+        .footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-address,
+.footer-contact {
+    text-align: center;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+    color: #f39c12; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 10px;
+    }
+}
+
+
 </style>
 <body>
       <!-- Preloader HTML -->
@@ -649,7 +700,23 @@ margin-top: 0;
             <button type="submit">Inquire</button>
         </form>
     </section>
-
+    <!-- <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/images/Desert_Roselogo-removebg-preview.png" alt="Company Logo">
+            </div>
+            <div class="footer-address">
+                <p><i class="fas fa-map-marker-alt"></i> 123 Business Street, City, Country</p>
+            </div>
+            <div class="footer-contact">
+                <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">+123 456 7890</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+9876543210">+987 654 3210</a></p>
+                <p><i class="fas fa-phone"></i> +567 890 1234</p>
+            </div>
+        </div>
+    </footer>
+     -->
+   
     <script>
         function sendWhatsAppMessage(event) {
             event.preventDefault(); // Prevent form submission
