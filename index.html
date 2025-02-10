@@ -108,8 +108,8 @@
     mix-blend-mode: lighten;
 }
 .logo-img {
-    height: 80px;
-    width: auto;
+    height: 200px;
+    width: 200px;
 }
 
 /* Hero content styles */
@@ -146,109 +146,6 @@ margin-top: 0;
     text-align: center;
     margin-top: -20px; /* Adjust this value as needed 
 } */
-.nav-links ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin-bottom: 20px;
-    margin-right: 50px;
-}
-
-.nav-links ul li {
-    margin-right: 20px;
-}
-
-.nav-links ul li:last-child {
-    margin-right: 0;
-}
-
-.nav-links ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 26px;
-    position: relative; /* Add relative positioning to the link */
-}
-
-.nav-links ul li a::after {
-    content: ''; /* Add an empty pseudo-element for the underline */
-    position: absolute; /* Position the underline absolutely */
-    left: 0; /* Align the underline with the left edge of the link */
-    bottom: -2px; /* Position the underline just below the link */
-    width: 0; /* Initially set the width of the underline to 0 */
-    height: 2px; /* Set the height of the underline */
-    background-color: #fff; /* Set the color of the underline */
-    transition: width 0.5s ease-in-out; /* Add smooth transition effect for width changes */
-}
-
-.nav-links ul li a:hover::after {
-    width: 100%; /* Set the width of the underline to 100% when hovering */
-}
-
-/* Social icons styles */
-.social-icons button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 26px;
-    color: #fff;
-    margin-bottom: 20px;
-    margin-right: 10px; /* Add right margin to separate icons/buttons */
-}
-
-.social-icons button i {
-    vertical-align: middle;
-}
-
-.social-icons button a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.social-icons a {
-    display: inline-block;
-    transition: transform all 0.3s ease;
-}
-
-.social-icons a:hover {
-    transform: scale(1.1); /* Adjust the scale factor as needed */
-}
-
-/* Book now button styles */
-.book-now-btn {
-    background-color: #fff;
-    color: black;
-    height: 50px;
-    width: 20%;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.book-now-btn a{
-    text-decoration: none;
-    color: black;
-}
-.book-now-btn a:hover{
-    color: white;
-}
-.book-now-btn:hover {
-    background-color:transparent;
-    box-sizing: border-box;
-    border: 2px solid #fff;
-    color: #fff;
-}
-@media only screen and (max-width: 767px) {
-    .book-now-btn{
-        width: 100px;
-    }
-    }
-    @media only screen and (max-width: 375px) {
-        /* Styles specifically for iPhone screens */
-        .book-now-btn {
-            width: 100px;
-        }
-    }
 
 /* Media query for mobile screens */
 @media only screen and (max-width: 767px) {
@@ -364,6 +261,7 @@ margin-top: 0;
     .waves-demo {
         font-size: 40px; /* Adjust font size for smaller screens */
         /* padding: 5px; Adjust padding for smaller screens */
+        margin-top: -35px;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -386,8 +284,9 @@ margin-top: 0;
 
     .subtitle1 {
         font-size: 12px; /* Reduce font size */
-        letter-spacing: 8px; /* Adjust letter spacing */
+        letter-spacing: 4px; /* Adjust letter spacing */
         margin-top: -10px; /* Adjust spacing */
+        color: white;
     }
 
     .nav-links ul {
@@ -411,7 +310,7 @@ margin-top: 0;
     }
 
     .logo-img {
-        height: 60px; /* Reduce logo size */
+        height: 80px; /* Reduce logo size */
     }
 
     .social-icons button {
@@ -426,7 +325,7 @@ margin-top: 0;
 
     .subtitle1 {
         font-size: 10px;
-        letter-spacing: 6px;
+        /* letter-spacing: px; */
     }
 
     .book-now-btn {
@@ -511,6 +410,10 @@ margin-top: 0;
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    
+.blog-section{
+    margin-top: -200px;
+}
     .blog-container {
         flex-direction: column;
         align-items: center;
@@ -687,8 +590,9 @@ margin-top: 0;
             
                 <!-- Description about Desert Rose -->
                 <p class="description">
-                    Desert Rose is a leading events, expo, and entertainment company, delivering world-class experiences across Bangalore, India, the Gulf, and Southeast Asia. We specialize in organizing high-profile exhibitions, concerts, and corporate events that bring creativity and innovation to life.
+                    Desert Rose is a leading events, expo, and entertainment company, delivering world-class experiences globally. With branches in Bangalore, the Gulf, and Southeast Asia, we specialize in organizing high-profile exhibitions, concerts, and corporate events that bring creativity and innovation to life.
                 </p>
+                
             
                 <!-- Social Links -->
                 <div class="social-links">
