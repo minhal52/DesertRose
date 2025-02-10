@@ -87,9 +87,8 @@
     </style>
 </head>
 <body>
-
     <section class="contact-section">
-        <h2>Book a Stall or Inquire</h2>
+        <h2 style="text-align: center;">Connect Us</h2>
         <form class="contact-form" onsubmit="sendWhatsAppMessage(event)">
             <input type="text" id="name" placeholder="Your Name" required>
             <input type="email" id="email" placeholder="Your Email" required>
@@ -100,7 +99,7 @@
                 <option value="General Inquiry">General Inquiry</option>
             </select>
             <textarea id="message" placeholder="Enter your message..." required></textarea>
-            <button type="submit">Contact Us</button>
+            <button type="submit">Inquire</button>
         </form>
     </section>
 
@@ -115,11 +114,13 @@
             let category = document.getElementById("category").value;
             let message = document.getElementById("message").value;
 
-            // WhatsApp number
-            let whatsappNumber = "917019211749"; // WhatsApp format (without +)
+            // WhatsApp number (without + sign)
+            let whatsappNumber = "917019211749";
 
-            // Prefilled WhatsApp message (URL encoded for safety)
-            let whatsappMessage = `Hello, I am ${name}.%0AEmail: ${email}%0APhone: ${phone}%0ACategory: ${category}%0A%0AMessage:%0A${message}`;
+            // Properly formatted prefilled WhatsApp message
+            let whatsappMessage = `Hello, I am ${name}. \nEmail: ${email}\nPhone: ${phone}\nCategory: ${category}\n\nMessage:\n${message}`;
+
+            // Encode the message for URL
             let encodedMessage = encodeURIComponent(whatsappMessage);
 
             // Open WhatsApp link
