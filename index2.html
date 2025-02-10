@@ -156,6 +156,97 @@ header {
 text-decoration: none;
 color:#e2bd55;
 }
+
+
+.footer {
+    background: #040823;
+    color: white;
+    padding: 30px 20px;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* About Us Section (Left Side) */
+.footer-about {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-about h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.footer-about p {
+    font-size: 14px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* Contact Details (Right Side) */
+.footer-contact {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+    color: #f39c12;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-about, .footer-contact {
+        text-align: center;
+    }
+    
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-about {
+        text-align: center;
+    }
+
+    .footer-contact {
+        text-align: center;
+        margin-top: 20px; /* Adds some spacing between sections */
+    }
+}
+
 </style>
 <body>
 
@@ -204,7 +295,13 @@ color:#e2bd55;
            
         </div>
         <a href="index.html" class="back-btn">← Back to Home</a>
+
+        
     </section>
+
+   
+    
+    
     <script>
         // counting number script
     const workSection = document.querySelector(".section-work-data");
