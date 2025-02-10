@@ -270,6 +270,13 @@ margin-top: 0;
         /* padding: 10px; Adjust padding for medium screens */
     }
 }
+@media only screen and (max-width: 767px) {
+    .logo-img {
+        height: 80px; /* Smaller size for mobile */
+        width: 80px;
+    }
+}
+
 
 @media only screen and (max-width: 767px) {
     .hero-content {
@@ -566,30 +573,52 @@ margin-top: 0;
         }
 
         .footer {
-    background-color: #222;
+    background: #040823;
     color: white;
-    padding: 20px 0;
+    padding: 30px 20px;
 }
 
 .footer-container {
+    max-width: 1000px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
+    align-items: flex-start;
+    gap: 40px;
 }
 
-.footer-logo img {
-    max-width: 150px;
+/* About Us Section (Left Side) */
+.footer-about {
+    flex: 1;
+    text-align: left;
 }
 
-.footer-address,
+.footer-about h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.footer-about p {
+    font-size: 14px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* Contact Details (Right Side) */
 .footer-contact {
-    text-align: center;
+    flex: 1;
+    text-align: left;
+}
+
+.footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f39c12;
 }
 
 .footer-contact p {
+    font-size: 14px;
     margin: 5px 0;
 }
 
@@ -600,7 +629,7 @@ margin-top: 0;
 }
 
 .footer-contact a:hover {
-    color: #f39c12; /* Change color on hover */
+    color: #f39c12;
 }
 
 /* Responsive Design */
@@ -610,11 +639,27 @@ margin-top: 0;
         text-align: center;
     }
 
-    .footer-logo {
-        margin-bottom: 10px;
+    .footer-about, .footer-contact {
+        text-align: center;
+    }
+    
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-about {
+        text-align: center;
+    }
+
+    .footer-contact {
+        text-align: center;
+        margin-top: 20px; /* Adds some spacing between sections */
     }
 }
-
 
 </style>
 <body>
@@ -700,22 +745,36 @@ margin-top: 0;
             <button type="submit">Inquire</button>
         </form>
     </section>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer-container">
-            <div class="footer-logo">
-                <img src="assets/images/Desert_Roselogo-removebg-preview.png" alt="Company Logo">
+            <!-- Left Side: About Us -->
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>
+                    Desert Rose is a leading events, expo, and entertainment company, delivering world-class experiences globally. With branches in Bangalore, the Gulf, and Southeast Asia, we specialize in organizing high-profile exhibitions, concerts, and corporate events.
+                </p>
             </div>
-            <div class="footer-address">
-                <p><i class="fas fa-map-marker-alt"></i> 123 Business Street, City, Country</p>
-            </div>
+    
+            <!-- Right Side: Contact Details -->
             <div class="footer-contact">
-                <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">+123 456 7890</a></p>
-                <p><i class="fas fa-phone"></i> <a href="tel:+9876543210">+987 654 3210</a></p>
-                <p><i class="fas fa-phone"></i> +567 890 1234</p>
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+917019211749">+91 7019211749</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+919632781673">+91 9632781673</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@desertrose.com">info@desertrose.com</a></p>
             </div>
         </div>
     </footer>
-     -->
+    
+    
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
+    
+    
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
+    
+    
    
     <script>
         function sendWhatsAppMessage(event) {
